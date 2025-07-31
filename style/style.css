@@ -1,0 +1,85 @@
+/* common */
+@import "tailwindcss";
+.flex{
+    display: flex;
+}
+.gray{
+    color: rgba(137, 135, 161, 1);
+}.orange{
+    color: rgba(233, 90, 8, 1);
+}
+
+ /* navbar */
+ .navbar{
+    justify-content: space-around;
+    align-items: center;
+ }
+ .nav_links ul{
+    display: flex;
+    
+}
+
+.nav_item{
+     list-style: none;
+     margin-right: 30px;
+}
+/* banner */
+ .banner ,
+  .nav,
+  .card_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+ }
+
+ /* ourplants */
+.our_plants{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px
+}
+.card_container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat( 4,1fr);
+    gap: 15px;
+    
+    
+}
+.btn_addtocart{
+ background-color: rgba(233, 90, 8, 1);
+ color:rgba(255, 255, 255, 1);
+ font-size: 1.25rem;
+ font-weight: 600;
+ padding: 20px 64px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.btn_content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.lilyblossom{
+
+    display: block;
+    
+}
+
+
+ @media screen and (max-width:576px){
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner_img{
+      max-width: 100%;
+      margin-bottom: 40px;
+        
+    }
+    .card_container{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+}
