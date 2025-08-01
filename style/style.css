@@ -26,7 +26,10 @@
 /* banner */
  .banner ,
   .nav,
-  .card_container{
+  .card_container,
+  .plantslover,
+  .flowerbunch,
+  .latestdeals{
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 120px;
@@ -39,6 +42,7 @@
     text-align: center;
     margin-top: 70px
 }
+
 .card_container{
     display: grid;
     justify-items: center;
@@ -66,6 +70,109 @@
     display: block;
     
 }
+/* plantslover */
+
+.flowerplants{
+
+    margin-left: 30px;
+}
+.latestdeals{
+    text-align: center;
+    margin-top: 120px;
+
+}
+.promo-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  font-family: sans-serif;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-small {
+  height: 150px;
+}
+
+.card-large {
+  grid-row: span 2;
+  height: 100%;
+}
+
+.newsletter-section {
+  background-image: url('../images/assets/news-letter-bg.png');
+background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.6); /* optional: light transparent overlay */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  flex: 1;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #e86c2d;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.jointhecol h2{
+    text-align: center;
+}
 
 
  @media screen and (max-width:576px){
@@ -82,4 +189,7 @@
        display: grid;
        grid-template-columns: repeat(2,1fr);
     }
+    .plants_description{
+   max-width: 400px;
+}
 }
