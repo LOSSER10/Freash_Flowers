@@ -8,6 +8,9 @@
 }.orange{
     color: rgba(233, 90, 8, 1);
 }
+.Center{
+  text-align: center;
+}
 
  /* navbar */
  .navbar{
@@ -27,15 +30,29 @@
  .banner ,
   .nav,
   .card_container,
-  .plantslover,
   .flowerbunch,
-  .latestdeals{
+  .latestdeals,
+  .plantslover{
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 120px;
  }
 
  /* ourplants */
+ .plantslover {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+}
+
+.imagesection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.textsection{
+  height: 100%;
+}
 .our_plants{
     display: flex;
     justify-content: center;
@@ -43,13 +60,21 @@
     margin-top: 70px
 }
 
+/* card */
 .card_container{
     display: grid;
     justify-items: center;
     grid-template-columns: repeat( 4,1fr);
     gap: 15px;
-    
-    
+   }
+   .card  p{
+    color: rgba(137, 135, 161, 1);;
+   }
+
+.btn_content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .btn_addtocart{
  background-color: rgba(233, 90, 8, 1);
@@ -60,36 +85,26 @@
  margin-top: 10px;
  margin-bottom: 10px;
 }
-.btn_content{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.lilyblossom{
 
-    display: block;
-    
-}
 /* plantslover */
 
 .flowerplants{
 
     margin-left: 30px;
 }
-.latestdeals{
-    text-align: center;
-    margin-top: 120px;
 
-}
-.promo-grid {
+.plantslover{
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
+  align-content:space-around;
+  
+  /* grid-template-rows: repeat(2, 1fr); */
+  
+  /* max-width: 100%; */
+  /* margin: auto; */
 }
 
+/* card */
 .card {
   position: relative;
   border-radius: 10px;
@@ -98,10 +113,9 @@
   font-family: sans-serif;
 }
 
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.latestdeals{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card-text {
@@ -173,8 +187,14 @@ form button {
 .jointhecol h2{
     text-align: center;
 }
-
-
+/* footer */
+.middle_part li{
+   list-style: none;
+}
+.footer{
+  max-width: 1200px;
+  margin: 0 auto;
+}
  @media screen and (max-width:576px){
     .banner{
         display: flex;
@@ -191,5 +211,22 @@ form button {
     }
     .plants_description{
    max-width: 400px;
+}
+.plantslover{
+  
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.footer{
+  display: flex;
+  flex-direction:column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.middle_part{
+  display: flex;
+  flex-direction: column;
 }
 }
